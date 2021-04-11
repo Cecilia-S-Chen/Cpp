@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/shuochen/Cpp/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,164 +131,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main8
+# Target rules for targets named main19
 
 # Build rule for target.
-main8: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main8
-.PHONY : main8
+main19: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main19
+.PHONY : main19
 
 # fast build rule for target.
-main8/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main8.dir/build.make CMakeFiles/main8.dir/build
-.PHONY : main8/fast
+main19/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main19.dir/build.make CMakeFiles/main19.dir/build
+.PHONY : main19/fast
 
-#=============================================================================
-# Target rules for targets named main1
+Memory/StackAndHeap.o: Memory/StackAndHeap.cpp.o
 
-# Build rule for target.
-main1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main1
-.PHONY : main1
-
-# fast build rule for target.
-main1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
-.PHONY : main1/fast
-
-#=============================================================================
-# Target rules for targets named main2
-
-# Build rule for target.
-main2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main2
-.PHONY : main2
-
-# fast build rule for target.
-main2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
-.PHONY : main2/fast
-
-#=============================================================================
-# Target rules for targets named Cpp
-
-# Build rule for target.
-Cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Cpp
-.PHONY : Cpp
-
-# fast build rule for target.
-Cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cpp.dir/build.make CMakeFiles/Cpp.dir/build
-.PHONY : Cpp/fast
-
-1.LinkWork/LinkWork.o: 1.LinkWork/LinkWork.cpp.o
-
-.PHONY : 1.LinkWork/LinkWork.o
+.PHONY : Memory/StackAndHeap.o
 
 # target to build an object file
-1.LinkWork/LinkWork.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/1.LinkWork/LinkWork.cpp.o
-.PHONY : 1.LinkWork/LinkWork.cpp.o
+Memory/StackAndHeap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main19.dir/build.make CMakeFiles/main19.dir/Memory/StackAndHeap.cpp.o
+.PHONY : Memory/StackAndHeap.cpp.o
 
-1.LinkWork/LinkWork.i: 1.LinkWork/LinkWork.cpp.i
+Memory/StackAndHeap.i: Memory/StackAndHeap.cpp.i
 
-.PHONY : 1.LinkWork/LinkWork.i
-
-# target to preprocess a source file
-1.LinkWork/LinkWork.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/1.LinkWork/LinkWork.cpp.i
-.PHONY : 1.LinkWork/LinkWork.cpp.i
-
-1.LinkWork/LinkWork.s: 1.LinkWork/LinkWork.cpp.s
-
-.PHONY : 1.LinkWork/LinkWork.s
-
-# target to generate assembly for a file
-1.LinkWork/LinkWork.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/1.LinkWork/LinkWork.cpp.s
-.PHONY : 1.LinkWork/LinkWork.cpp.s
-
-2.Variable/Variable.o: 2.Variable/Variable.cpp.o
-
-.PHONY : 2.Variable/Variable.o
-
-# target to build an object file
-2.Variable/Variable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/2.Variable/Variable.cpp.o
-.PHONY : 2.Variable/Variable.cpp.o
-
-2.Variable/Variable.i: 2.Variable/Variable.cpp.i
-
-.PHONY : 2.Variable/Variable.i
+.PHONY : Memory/StackAndHeap.i
 
 # target to preprocess a source file
-2.Variable/Variable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/2.Variable/Variable.cpp.i
-.PHONY : 2.Variable/Variable.cpp.i
+Memory/StackAndHeap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main19.dir/build.make CMakeFiles/main19.dir/Memory/StackAndHeap.cpp.i
+.PHONY : Memory/StackAndHeap.cpp.i
 
-2.Variable/Variable.s: 2.Variable/Variable.cpp.s
+Memory/StackAndHeap.s: Memory/StackAndHeap.cpp.s
 
-.PHONY : 2.Variable/Variable.s
-
-# target to generate assembly for a file
-2.Variable/Variable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/2.Variable/Variable.cpp.s
-.PHONY : 2.Variable/Variable.cpp.s
-
-8.Class/Scope.o: 8.Class/Scope.cpp.o
-
-.PHONY : 8.Class/Scope.o
-
-# target to build an object file
-8.Class/Scope.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main8.dir/build.make CMakeFiles/main8.dir/8.Class/Scope.cpp.o
-.PHONY : 8.Class/Scope.cpp.o
-
-8.Class/Scope.i: 8.Class/Scope.cpp.i
-
-.PHONY : 8.Class/Scope.i
-
-# target to preprocess a source file
-8.Class/Scope.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main8.dir/build.make CMakeFiles/main8.dir/8.Class/Scope.cpp.i
-.PHONY : 8.Class/Scope.cpp.i
-
-8.Class/Scope.s: 8.Class/Scope.cpp.s
-
-.PHONY : 8.Class/Scope.s
+.PHONY : Memory/StackAndHeap.s
 
 # target to generate assembly for a file
-8.Class/Scope.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main8.dir/build.make CMakeFiles/main8.dir/8.Class/Scope.cpp.s
-.PHONY : 8.Class/Scope.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cpp.dir/build.make CMakeFiles/Cpp.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cpp.dir/build.make CMakeFiles/Cpp.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cpp.dir/build.make CMakeFiles/Cpp.dir/main.cpp.s
-.PHONY : main.cpp.s
+Memory/StackAndHeap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main19.dir/build.make CMakeFiles/main19.dir/Memory/StackAndHeap.cpp.s
+.PHONY : Memory/StackAndHeap.cpp.s
 
 # Help Target
 help:
@@ -298,22 +178,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Cpp"
-	@echo "... main1"
-	@echo "... main2"
-	@echo "... main8"
-	@echo "... 1.LinkWork/LinkWork.o"
-	@echo "... 1.LinkWork/LinkWork.i"
-	@echo "... 1.LinkWork/LinkWork.s"
-	@echo "... 2.Variable/Variable.o"
-	@echo "... 2.Variable/Variable.i"
-	@echo "... 2.Variable/Variable.s"
-	@echo "... 8.Class/Scope.o"
-	@echo "... 8.Class/Scope.i"
-	@echo "... 8.Class/Scope.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main19"
+	@echo "... Memory/StackAndHeap.o"
+	@echo "... Memory/StackAndHeap.i"
+	@echo "... Memory/StackAndHeap.s"
 .PHONY : help
 
 

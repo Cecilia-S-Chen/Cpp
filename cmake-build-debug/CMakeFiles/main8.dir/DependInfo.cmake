@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/shuochen/Cpp/8.Class/Scope.cpp" "/Users/shuochen/Cpp/cmake-build-debug/CMakeFiles/main8.dir/8.Class/Scope.cpp.o"
+  "/Users/shuochen/Cpp/8.Class/MemberFunction.cpp" "/Users/shuochen/Cpp/cmake-build-debug/CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
