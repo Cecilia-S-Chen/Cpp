@@ -77,27 +77,27 @@ include CMakeFiles/main8.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main8.dir/flags.make
 
-CMakeFiles/main8.dir/8.Class/Scope.cpp.o: CMakeFiles/main8.dir/flags.make
-CMakeFiles/main8.dir/8.Class/Scope.cpp.o: ../8.Class/Scope.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shuochen/Cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main8.dir/8.Class/Scope.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main8.dir/8.Class/Scope.cpp.o -c /Users/shuochen/Cpp/8.Class/Scope.cpp
+CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o: CMakeFiles/main8.dir/flags.make
+CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o: ../8.Class/MemberFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/shuochen/Cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o -c /Users/shuochen/Cpp/8.Class/MemberFunction.cpp
 
-CMakeFiles/main8.dir/8.Class/Scope.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main8.dir/8.Class/Scope.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shuochen/Cpp/8.Class/Scope.cpp > CMakeFiles/main8.dir/8.Class/Scope.cpp.i
+CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shuochen/Cpp/8.Class/MemberFunction.cpp > CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.i
 
-CMakeFiles/main8.dir/8.Class/Scope.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main8.dir/8.Class/Scope.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shuochen/Cpp/8.Class/Scope.cpp -o CMakeFiles/main8.dir/8.Class/Scope.cpp.s
+CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shuochen/Cpp/8.Class/MemberFunction.cpp -o CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.s
 
 # Object files for target main8
 main8_OBJECTS = \
-"CMakeFiles/main8.dir/8.Class/Scope.cpp.o"
+"CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o"
 
 # External object files for target main8
 main8_EXTERNAL_OBJECTS =
 
-main8: CMakeFiles/main8.dir/8.Class/Scope.cpp.o
+main8: CMakeFiles/main8.dir/8.Class/MemberFunction.cpp.o
 main8: CMakeFiles/main8.dir/build.make
 main8: CMakeFiles/main8.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/shuochen/Cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main8"
