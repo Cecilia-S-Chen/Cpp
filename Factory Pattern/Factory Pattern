@@ -19,5 +19,67 @@ using namespace std;
  */
 
 class Shoes {
-    
+public:
+    virtual void Show() = 0;
 };
+
+class NikeShoes : public Shoes{
+public:
+    void Show() {cout << "Nike : Just do it" << endl;};
+};
+
+class AddidasShoes : public Shoes{
+public:
+    void Show() {cout << "Addidasv : Impossible is nothing" << endl;}
+};
+
+class LiNingShoes : public Shoes {
+public:
+    void Show() {cout << "LiNing : Evering thing is possible" << endl;}
+};
+
+enum ShoesType {
+    Nikes,
+    Addidas,
+    Lining
+};
+class ShowFactory {
+public:
+    /*
+     * 栈内存：在编译时能确定内存大小，开辟内存在栈上
+     * 堆内存：在函数运行是才能确定的内存大小，开辟内存在堆上
+     *
+     * 在堆上开辟内存使用new
+     * 1、new工作流程：开辟内存，调用构造函数初始化内存
+     * 2、new返回：指向该内存首地址的指针
+     *
+     */
+    Shoes *CreateShoes (ShoesType shoesType) {
+        switch (shoesType) {
+            case Nikes :
+                return new NikeShoes();
+                break;
+            case Addidas:
+                return new AddidasShoes();
+                break;
+            case Lining:
+                return new LiNingShoes();
+                break;
+            default:
+                break;
+
+        }
+    }
+
+};
+
+int main() {
+    ShowFactory factory;
+    Shoes *nikeShoes = factory.CreateShoes(Nikes);
+    if (nikeShoes == nullptr) {return 0;}
+    else {nikeShoes->Show();}
+
+    Shoes *addidasShoes  = factory.CreateShoes(Addidas);
+    if(addidasShoes == nullptr) {return 0;}
+    else {addidasShoes->Show();}
+}
